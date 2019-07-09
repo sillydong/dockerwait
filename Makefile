@@ -2,7 +2,7 @@ all: build publish
 .PHONY: all
 
 build:
-	docker build -f Dockerfile . -t sillydong/wait:2.5.0
+	docker build -f Dockerfile . -t sillydong/wait:2.5.1
 
 publish:
-	docker push sillydong/wait:2.5.0
+	docker push sillydong/wait:2.5.1

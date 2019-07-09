@@ -4,14 +4,14 @@ This is made from [https://github.com/ufoscout/docker-compose-wait](https://gith
 
 ## version
 
-current version is 2.5.0
+current version is 2.5.1
 
 For detail, visit [https://github.com/ufoscout/docker-compose-wait/releases](https://github.com/ufoscout/docker-compose-wait/releases)
 
 ## image
 
 ```
-docker pull sillydong/wait:2.5.0
+docker pull sillydong/wait:2.5.1
 ```
 
 ## example
@@ -29,7 +29,7 @@ COPY src/. /go/src/
 WORKDIR /go/src/foo/bar/cmd
 RUN go build -ldflags "${GO_LDFLAGS}" .
 
-FROM sillydong/wait:2.5.0
+FROM sillydong/wait:2.5.1
 EXPOSE 80
 EXPOSE 81
 COPY --from=build /go/src/foo/bar/cmd/cmd /bin/
